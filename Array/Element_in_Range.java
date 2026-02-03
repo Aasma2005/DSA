@@ -3,7 +3,8 @@ public class Element_in_Range {
 
         int arr[] = {1,4,5,2,7,8,3};
         int A = 2;
-        int B = 6;
+        int B = 6
+        ;
 
         int count = 0;
 
