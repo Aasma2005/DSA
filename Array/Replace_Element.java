@@ -1,4 +1,4 @@
-class Demo{
+class replace_Element{
     
         static int replaceElement(int num){
             String str= String.valueOf(num);

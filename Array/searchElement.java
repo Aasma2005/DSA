@@ -1,4 +1,4 @@
-class Demo{
+class SearchElement{
     public static void main(String[]args){
         int[] arr=new int[]{1,2,3,4};
         int x=3;
