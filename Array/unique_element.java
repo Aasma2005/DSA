@@ -1,0 +1,57 @@
+//brute force approach
+
+// public class unique_element {
+//     public static void main(String[] args) {
+//         int arr[]=new int[]{6,2,5,2,2,6,6};
+//         int k=3;
+        
+//         for(int i=0;i<arr.length;i++){
+//             int count=0;
+//             for(int j=0;j<arr.length;j++){
+//                 if(arr[i]==arr[j]){
+//                     count++;
+//                 }
+//             }
+//             if(count!=k){
+//                 System.out.println(arr[i]);
+//                 break;
+//             }
+//                     }
+//     }
+    
+// }
+// //optimize approach
+public class unique_element {
+
+    static int findUnique(int[] arr, int n, int k) {
+
+        int result = 0;
+
+        // Integer ke 32 bits hote hain
+        for (int i = 0; i < 32; i++) {
+
+            int count = 0;
+
+            for (int j = 0; j < n; j++) {
+                if ((arr[j] & (1 << i)) != 0) {
+                    count++;
+                }
+            }
+
+            // Agar count k ka multiple nahi hai
+            if (count % k != 0) {
+                result |= (1 << i);
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        int arr[] = {6, 2, 5, 2, 2, 6, 6};
+        int k = 3;
+        int n = arr.length;
+
+        System.out.println(findUnique(arr, n, k));
+    }
+}
