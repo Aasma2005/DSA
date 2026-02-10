@@ -12,4 +12,8 @@ class Solution {
         
         System.out.println(lengthString(str));
     }
+    public String removeChara(String s, int pos) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'removeChara'");
+    }
 }
