@@ -16,4 +16,8 @@ class Solution {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'removeChara'");
     }
+    public void removeCharacter(StringBuilder s, char c) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'removeCharacter'");
+    }
 }
