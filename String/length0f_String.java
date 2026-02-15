@@ -1,6 +1,6 @@
 
 
-class Solution {
+class lengthOf_String {
     
     public static int lengthString(String str) {
         
@@ -12,12 +12,5 @@ class Solution {
         
         System.out.println(lengthString(str));
     }
-    public String removeChara(String s, int pos) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'removeChara'");
-    }
-    public void removeCharacter(StringBuilder s, char c) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'removeCharacter'");
-    }
+    
 }

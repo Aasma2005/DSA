@@ -8,7 +8,6 @@ public class print_substring {
         
         String s="abc";
         for(int i=0;i<s.length();i++){
-            int count='0';
             for(int j=0;j<s.length();j++){
                 System.out.println(s.substring(i, j+1));
                 
