@@ -28,4 +28,9 @@ class Solution {
         int result = sc.maxSubarraySum(arr,k);
         System.out.println(result);
     }
+
+    public char[] countArray(int[] arr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'countArray'");
+    }
 }
