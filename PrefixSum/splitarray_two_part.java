@@ -21,7 +21,6 @@ public class splitarray_two_part {
         }
 
         if (splitIndex != -1) {
-            // Pahla hissa print karne ke liye
             System.out.print("{ ");
 
             for (int i = 0; i <= splitIndex; i++) {
@@ -29,13 +28,12 @@ public class splitarray_two_part {
             }
 
             System.out.println(" }");
-
-            // Doosra hissa print karne ke liye
             System.out.print("{ ");
+            
             for (int i = splitIndex + 1; i < arr.length; i++) {
                 System.out.print(arr[i]+",");
             }
-            System.out.println(" }");
+            System.out.println("}");
         } else {
             System.out.println("Not Possible");
         }
