@@ -1,6 +1,6 @@
 class non_repeating_number_array{
     public int firstNonRepeating(int[] arr) {
-        // Complete the function
+       
         for (int i = 0; i < arr.length; i++) {
             boolean foundDuplicate = false;
             
@@ -11,7 +11,6 @@ class non_repeating_number_array{
                     break; 
                 }
             }
-            
             
             if (!foundDuplicate) {
                 return arr[i];
