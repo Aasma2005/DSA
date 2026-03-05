@@ -13,12 +13,11 @@ public void reverseArray(int[] arr){
         i++;
         j--;
     }
-   
 }
 public static void main(String[]args){
     int[] arr=new int[]{1,2,3,4,5,6};
     Reverse_array sc=new Reverse_array();
-   sc.reverseArray(arr);
-        System.out.println(Arrays.toString(arr));
+    sc.reverseArray(arr);
+    System.out.println(Arrays.toString(arr));
 }
 }
