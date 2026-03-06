@@ -26,12 +26,11 @@ public class ternary_search {
             else if (arr[mid1] < arr[mid2]) {
                 high = mid2 - 1;
 
-                // update with better candidate
+      
                 minIndex = mid1;
             }
 
-            // is arr[mid1] > arr[mid2], the minimum lies in the
-            // right part (including mid2)
+            
             else {
                 low = mid1 + 1;
 
