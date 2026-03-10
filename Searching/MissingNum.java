@@ -1,6 +1,6 @@
 public class MissingNum {
     public static void main(String[]args){
-        int arr[]=new int[]{1,2,3,5};
+        int arr[]=new int[]{1,5,4,3};
 
         for(int i=0;i<arr.length;i++){
             if(arr[i]!=i+1){
