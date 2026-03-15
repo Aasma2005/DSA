@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Second_min_value {
     public static void main(String[] args) {
         
-        int arr[]=new int[]{1,1,1,1,1}; 
+        int arr[]=new int[]{1,45,67,89,98}; 
         int n=arr.length;
         Arrays.sort(arr);
 
