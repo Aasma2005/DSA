@@ -1,31 +1,36 @@
 class Solution {
-    
-    public int maxSubarraySum(int[] arr, int k) {
-        
+    public static int findEquilibrium(int arr[]) {
+        // code here
         int n = arr.length;
-        
-        // Step 1: Calculate first window sum
-        int windowSum = 0;
-        for(int i = 0; i < k; i++) {
-            windowSum += arr[i];
-        }
-        
-        int maxSum = windowSum;
-        
-        // Step 2: Slide the window
-        for(int i = k; i < n; i++) {
-            windowSum = windowSum + arr[i] - arr[i - k];
-            maxSum = Math.max(maxSum, windowSum);
-        }
-        
-        return maxSum;
-    }
 
-    public static void main(String[] args){
-        int arr[] = {100,200,300,400};
-        int k = 2;
-        Solution sc = new Solution();
-        int result = sc.maxSubarraySum(arr,k);
-        System.out.println(result);
+        int[] pref = new int[n];
+        int[] suff = new int[n];
+
+        // Initialize the ends of prefix
+        // and suffix array
+        pref[0] = arr[0];
+        suff[n - 1] = arr[n - 1];
+
+        // Calculate prefix sum for all indices
+        for (int i = 1; i < n; i++) 
+            pref[i] = pref[i - 1] + arr[i];
+
+        // Calculating suffix sum for all indices
+        for (int i = n - 2; i >= 0; i--) 
+            suff[i] = suff[i + 1] + arr[i];
+
+        // Checking if prefix sum 
+        // is equal to suffix sum
+        for (int i = 0; i < n; i++) {
+            if (pref[i] == suff[i]) 
+                return i;
+        }
+
+        return -1;
+    }
+    public static void main(String[]args){
+        int arr[]=new int[]{1,2,0,3};
+        Solution sc=new Solution();
+        System.out.println(sc.findEquilibrium(arr));
     }
 }
